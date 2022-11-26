@@ -10,16 +10,14 @@ question={"The first country in the world to use postcards was the United States
         "The FIFA World Cup 2022 will take place in Iran.":"No",
         "AB- is the rarest type of blood in humans.":"Yes",
         "A cube has 16 straight edges in total.":"No"}
-
 import random
-questionlist=[]
-while(len(questionlist)!=5):                            # List of 5 questions
-    
-    i=random.choice(list(question.keys()))              # Choose Random question from question pool and make a list of it
 
-        
+questionlist=[]
+
+while(len(questionlist)!=5):                            # List of 5 questions
+    i=random.choice(list(question.keys()))              # Choose Random question from question pool and make a list of it
     if  i not in questionlist :
-        questionlist.append(i)                          # Make a list of random qustions
+        questionlist.append(i)                          # Make a list of random qustions 
         
 score=0
 for i in questionlist:       
