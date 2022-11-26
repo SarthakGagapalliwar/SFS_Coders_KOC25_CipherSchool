@@ -1,4 +1,4 @@
-# Pool of questions
+# Pool of questions 
 question={"The first country in the world to use postcards was the United States of America. ":"Yes",
         "Black is the most commonly used colour in all national flags around the world.":"No",
         " Mice have more bones than humans.":"Yes",
@@ -12,17 +12,15 @@ question={"The first country in the world to use postcards was the United States
         "A cube has 16 straight edges in total.":"No"}
 
 import random
-
 questionlist=[]
-
-while(len(questionlist)!=5):                            # list of 5 questions
+while(len(questionlist)!=5):                            # List of 5 questions
     
-    i=random.choice(list(question.keys()))              #Choose Random question from question pool and make a list of it
+    i=random.choice(list(question.keys()))              # Choose Random question from question pool and make a list of it
 
-    if  i not in questionlist :
-        questionlist.append(i)                          # make a list of random qustions
         
-
+    if  i not in questionlist :
+        questionlist.append(i)                          # Make a list of random qustions
+        
 score=0
 for i in questionlist:       
     print("\n"+i)
